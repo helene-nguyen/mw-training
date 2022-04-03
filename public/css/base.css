@@ -1,0 +1,108 @@
+/*********/
+/**ASSETS**/
+/**********/
+
+:root {
+    /*colors*/
+    --sand: #F6D7A7;
+    --beige: #F6EABE;
+    --light-blue: #C8E3D4;
+    --light-blue-op: #c8e3d47e;
+    --light-green: #87AAAA;
+    --black: #000;
+    --white: #FFF;
+    /*fonts*/
+    --ft-send-flowers: 'Send Flowers', cursive;
+    --ft-SIL: 'Shadows Into Light', cursive;
+}
+
+body {
+    height: 100vh;
+    position: relative;
+    margin: 3em 1em 0;
+    font-family: var(--ft-SIL);
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+li {
+    font-size: 2em;
+    padding: 0 2em;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 4em;
+    width: 25%;
+    margin: 3em auto 0;
+    padding: 0.25em;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    background-color: var(--white);
+}
+
+.title {
+    font-size: 7em;
+    font-family: var(--ft-send-flowers);
+    line-height: 0.75em;
+    text-align: center;
+    margin: 0.5em auto 0;
+
+}
+
+/*HEADER//FOOTER*/
+#footer,
+#header {
+    height: 5em;
+    width: 100%;
+    background-image: url(/banner.png);
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    z-index: -9999;
+}
+
+#header {
+    height: 15em;
+    position: relative;
+    top: 0em;
+    z-index: 0;
+}
+
+/*Header*/
+
+.bg {
+    height: 19em;
+    width: 90%;
+    background-color: var(--light-blue-op);
+    position: relative;
+    top: -2em;
+    display: flex;
+    justify-content: center;
+    margin: 1em auto 0;
+}
+
+/*****************/
+/**MEDIA QUERIES**/
+/*****************/
+
+@media screen and (max-width: 720px) {
+    .bg {
+        align-items: center;
+    }
+
+    .title {
+        font-size: 6em;
+        margin: 0;
+    }
+}

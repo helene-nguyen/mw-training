@@ -1,0 +1,12 @@
+<nav>
+    <!-- here nav element -->
+    <ul>
+        <% //loop for nav %>
+        <%  for(let info of infos.infosPages){ %>
+        <li>
+            <a href="/<%= info.name%> "><%= info.title%></a>
+        </li>
+        <% } %>
+    </ul>
+
+</nav>
